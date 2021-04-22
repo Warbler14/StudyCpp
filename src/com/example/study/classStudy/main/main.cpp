@@ -8,56 +8,53 @@
 #include <iostream>
 #include "TestLocal.h"
 #include "../header/Test01.h"
-//#include "../header/Test02.h"
-//#include "../header/Calculator.h"
+#include "../header/Test02.h"
+#include "../header/Calculator.h"
 
 using namespace std;
 
-class TestClass {
+class TestClassOnMain {
 public:
-	void run();
+	void run(const char * messages);
 
-	TestClass() {
-		cout << "TestClass constructor" << endl;
-		run();
+	TestClassOnMain() {
+		cout << "TestClassOnMain constructor" << endl;
+		run("on consructor");
 	}
 };
 
-void TestClass::run() {
-	cout << "TestClass run()" << endl;
+void TestClassOnMain::run(const char * messages) {
+	cout << "TestClassOnMain run() " << messages <<endl;
 }
+
+// void TestLocal::show() {
+// 	cout << "!!!Test Local!!!" << endl;
+// }
 
 int main(void) {
 
-	TestClass testClass;
-	//testClass.run();
+	//g++ main.cpp -o main && ./main
+	//TestClassOnMain testClass;
+	//testClass.run("on main");
 
+	//g++ main.cpp TestLocal.cpp -o main && ./main
 	//TestLocal test;
-	//test.run();
+	//test.show();
 
-/*
-	[Running] cd "/Users/kook/workspaces/cwork/StudyCpp/src/com/example/study/classStudy/main/" && g++ main.cpp -o main && "/Users/kook/workspaces/cwork/StudyCpp/src/com/example/study/classStudy/main/"main
-	Undefined symbols for architecture x86_64:
-	"TestLocal::Run()", referenced from:
-		_main in main-0347da.o
-	ld: symbol(s) not found for architecture x86_64
-	clang: error: linker command failed with exit code 1 (use -v to see invocation)
-*/
+	//g++ main.cpp ../core/Test01.cpp -o main && ./main
+	//Test01 test01;	
+	//test01.Run();
+	
 
-	//Test01 test01;
-	/*
-	test01.Run();
-	*/
+	//g++ main.cpp ../core/Test02.cpp -o main && ./main
+	//Test02 test02;
+	//test02.Run();
+	
 
-	/*
-	Test02 test02;
-	test02.Run();
-	*/
-
-	/*
+	//g++ main.cpp ../core/*.cpp -o main && ./main	
 	Calculator calc;
 	calc.Run();
-	*/
+	
 
 	return 0;
 }

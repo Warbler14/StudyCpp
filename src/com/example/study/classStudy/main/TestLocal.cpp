@@ -4,7 +4,7 @@
 using namespace std;
 
 void TestLocal::show() {
-	//#error
+
 	cout << "!!!Test Local!!!" << endl;
 
 }

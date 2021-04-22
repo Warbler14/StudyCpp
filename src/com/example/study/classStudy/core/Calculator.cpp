@@ -10,7 +10,7 @@ using namespace std;
 
 void Calculator::Run() {
 
-	cout << "Calc test" << endl;
+	cout << "Calc test 1" << endl;
 
 	int a = 10;
 	int b = 3;
@@ -27,7 +27,7 @@ void Calculator::Run() {
 	Div div(a, b);
 	cout << a << "/" << b << "=" << div.Process() << endl;
 
-	cout << "Calc test2" << endl;
+	cout << "Calc test 2" << endl;
 
 	ArithmeticOperation ao(11, 3);
 	cout << a << "+" << b << "=" << ao.add() << endl;

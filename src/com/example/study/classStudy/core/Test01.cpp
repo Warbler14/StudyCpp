@@ -5,7 +5,7 @@ using namespace std;
 
 void Test01::Run() {
 
-	cout << "!!!Hello World!!!" << endl;
+	cout << "Test01 run" << endl;
 
 	int data = 10;
 
