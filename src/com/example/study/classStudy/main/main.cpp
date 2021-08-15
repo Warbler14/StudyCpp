@@ -47,16 +47,14 @@ int main(void) {
 	
 
 	//g++ main.cpp ../core/Test02.cpp -o main && ./main
-	//Test02 test02;
-	//test02.Run();
+	Test02 test02;
+	test02.Run();
 	
 
 	//g++ main.cpp ../core/*.cpp -o main && ./main	
-	Calculator calc;
-	calc.Run();
-	
+	// Calculator calc;
+	// calc.Run();
 
-	//test
 
 	return 0;
 }
