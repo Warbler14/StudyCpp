@@ -36,12 +36,12 @@ void test01(){
 	std::cout <<  ::val << std::endl;
 	std::cout <<  val << std::endl;
 
-	A_COM::function();
-	B_COM::function();
-	C_COM::function();
-	C_COM::function(10);
-	C_COM::gugudan();
-	C_COM::gugudanRange();
+	// A_COM::function();
+	// B_COM::function();
+	// C_COM::function();
+	// C_COM::function(10);
+	// C_COM::gugudan();
+	// C_COM::gugudanRange();
 }
 
 void test02(){

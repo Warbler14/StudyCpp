@@ -11,7 +11,7 @@ using namespace std;
 void Calculator::Run() {
 
 	cout << "Calc test 1" << endl;
-
+/*
 	int a = 10;
 	int b = 3;
 
@@ -34,5 +34,5 @@ void Calculator::Run() {
 	cout << a << "-" << b << "=" << ao.sub() << endl;
 	cout << a << "*" << b << "=" << ao.mux() << endl;
 	cout << a << "/" << b << "=" << ao.div() << endl;
-
+*/
 }
